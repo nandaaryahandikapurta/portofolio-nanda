@@ -63,19 +63,19 @@
                 <ul class="gallery">
                     <li><a href="#">
                         <h1>Galleri 1</h1>
-                        <img src="img/Kelas (12).jpg" alt="foto saat sebelum ujian">
+                        <img src="img/kelas-14.jpg" alt="foto saat sebelum ujian">
                     </a>
                         <a href="#">
                             <h1>Gallery 2</h1>
-                            <img src="img/Kelas (6).jpg" alt="foto saat setelah penjoblosan osis">
+                            <img src="img/kelas-16.jpg" alt="foto saat setelah penjoblosan osis">
                         </a>
                         <a href="#">
                             <h1>Gallery 3</h1>
-                            <img src="img/Kelas (14).jpg" alt=" foto setelah penjoblosan osis">
+                            <img src="img/kelas-15.jpg" alt=" foto setelah penjoblosan osis">
                         </a>
                         <a href="#">
                             <h1>gallery 4</h1>
-                            <img src="img/Kelas (12).jpg" alt="foto random">
+                            <img src="img/kelas-13.jpg" alt="foto random">
                         </a>
                     </li>
                 </ul>
@@ -83,7 +83,14 @@
         </section>
     </div>
     
-    <script src=""></script>
+    <script>
+        const menutoggle = document.querySelector('.menu-toggle input')
+const nav= document.querySelector('nav ul')
+
+menutoggle.addEventListener('click', function (){
+    nav.classList.toggle('slide')
+});
+    </script>
 
 </body>
 </html>

@@ -41,10 +41,11 @@ img {
 }
 .hero {
     grid-area: hero;
+    background-image: url(img/kelas-15.jpg);
     min-height: 600px;
-    background-position: center;
-    background-size: cover;
-    background-image: url(img/miegoreng.jpg);
+    background-position: bottom;
+    background-size: cover ;
+    opacity: .9;
 }
 
 .menu {
@@ -211,8 +212,8 @@ img {
 .Gallery h2 {
     grid-column: 1 / -1;
 text-align: center;
-margin-bottom: 40px;
-margin-top: 40px;
+margin-bottom: 40px; 
+ margin-top: 40px;
 }
 
 .hero-galeri {
@@ -286,7 +287,7 @@ margin-top: 40px;
         margin: 30px;
         color: white;
         text-decoration: none;
-        background-color: blue;
+        background-color: orangered;
         padding: 20px;
         border-radius: 45px;
        transition: .3s;
