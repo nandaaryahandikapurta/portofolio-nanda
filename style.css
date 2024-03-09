@@ -41,7 +41,10 @@ img {
 }
 .hero {
     grid-area: hero;
-   background-image: url(img/Kelas.jpg);
+    min-height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(img/miegoreng.jpg);
 }
 
 .menu {
