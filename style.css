@@ -232,8 +232,6 @@ margin-bottom: 40px;
   
 }
 .gallery a {
-    border: 5px solid orange;
-    border-radius: 5px;
     opacity: 1;
     text-decoration: none;
     transition: .3s;
@@ -337,7 +335,7 @@ margin-bottom: 40px;
             top: 0;
             flex-direction: column;
             background-color: black;
-            height: 100vh;
+            height: 100%;
             align-items: center;
             justify-content: space-evenly;
             z-index: 1;
@@ -352,10 +350,8 @@ margin-bottom: 40px;
             transform: translateY(0);
         }
 
-        .gallery li {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        }
-    
+      
+
 }
 
 
@@ -366,17 +362,93 @@ margin-bottom: 40px;
         margin: 15px;
     }
 
-    
+    .hero {
+        width: 90%;
+    }
 
     .header {
         grid-area: 
         'hero';
     }
 
-    .gallery li {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
+   .hero-gallery h1 {
+    display: none;
+   }
+    
+   .Gallery {
+    margin-top: 50px;
+    background-color: #373F55;
+    padding: 15px;
+    text-align: center;
+    border: 3px solid grey;
+   }
 
-  
+   .gallery img {
+    width: 100%;
+    border-radius: 10px;
+   }
+
+   .gallery a{
+    border-radius: 5px ;
+    margin-top: 50px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px;
+   }
+
+   .Gallery h2 {
+    color: white;
+   }
+
+   .gallery p {
+    display: flex;
+    background-color: #F9F9F9;
+    border-radius: 20px;
+    padding: 20px;
+   }
+
+
+   .hero {
+    grid-area: hero;
+    background-image: url(img/kelas-17.jpg);
+    min-height: 300px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.hero h4,
+.hero p {
+    display: block;
+    background-color: black;
+    font-size: 14px;
+
+}
+
+.buttun {
+    display: none;
+    min-height: 100%;
+}
+
+.service {
+    background-color: white;
+    text-align: center;
+    border: 6px solid grey;
+    
+   
+}
+
+
+
+.services {
+    border-radius: 5px ;
+    margin-top: 50px;
+    display: grid;
+    background-color: #AC7C58;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) ;
+    gap: 10px;
+}
 
 }
